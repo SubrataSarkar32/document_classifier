@@ -32,16 +32,23 @@ OR
 use this script in your pdf folder:
 
     import os
+    
     import document_classifier
+    
     PATH = os.path.abspath(os.path.dirname(__file__))
+    
     files = []
-
+    
     for filename in os.listdir('.'):
+    
         if filename.endswith('.pdf'):
+        
             filepath=os.path.join(PATH, filename)
+            
             files.append(filepath)
-
+            
     dict1=document_classifier.analyze(pdfFiles=files)
+    
     print(dict1)
 
 Installation
@@ -63,5 +70,16 @@ Install via pip:
     `pip install git+ssh://git@github.com/SubrataSarkar32/document_classifier.git@master`
 OR
     1.Dowload zip
+    
     2.open cmd in document_classifier directory
+    
     3.type : `python setup.py install` 
+
+Contribute
+=====
+    
+    1.Fork the repo
+    
+    2.Make changes
+    
+    3.Make a pull request
