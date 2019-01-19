@@ -55,7 +55,7 @@ def analyze(pdfFiles=[]):
        #We create a list comprehension which only returns a list of words #that are NOT IN stop_words and NOT IN punctuations.
 
        keywords = [word for word in tokens if not word in stop_words and not word in punctuations]
-       textdict[filename]+=[keywords]
+       textdict[filename]=[keywords]
 
    return(textdict)
    
