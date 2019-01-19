@@ -30,25 +30,18 @@ A dictionary is printed
 OR
 
 use this script in your pdf folder:
+.. code-block:: python
+::
 
-    import os
-    
-    import document_classifier
-    
-    PATH = os.path.abspath(os.path.dirname(__file__))
-    
-    files = []
-    
-    for filename in os.listdir('.'):
-    
-        if filename.endswith('.pdf'):
-        
-            filepath=os.path.join(PATH, filename)
-            
-            files.append(filepath)
-            
-    dict1=document_classifier.analyze(pdfFiles=files)
-    
+    import os    
+    import document_classifier    
+    PATH = os.path.abspath(os.path.dirname(__file__))    
+    files = []    
+    for filename in os.listdir('.'):    
+        if filename.endswith('.pdf'):        
+            filepath=os.path.join(PATH, filename)            
+            files.append(filepath)            
+    dict1=document_classifier.analyze(pdfFiles=files)    
     print(dict1)
 
 Installation
@@ -57,9 +50,10 @@ This library works on Windows(Python3).You need to install Tesseract-OCR and nlt
 Link to Tesseract(https://github.com/UB-Mannheim/tesseract/wiki)<version 4 preferrably>
 For nltk:
     go to python IDLE:
-    
-    >>>import nltk
+::
 
+    >>>import nltk
+    
     >>>nltk.download()
     
 This will open a new window.
@@ -78,8 +72,8 @@ OR
 Contribute
 =====
     
-    1.Fork the repo
+1.Fork the repo
     
-    2.Make changes
+2.Make changes
     
-    3.Make a pull request
+3.Make a pull request
