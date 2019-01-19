@@ -30,39 +30,38 @@ A dictionary is printed
 OR
 
 use this script in your pdf folder:
-```
-import os
-import document_classifier
-PATH = os.path.abspath(os.path.dirname(__file__))
-files = []
 
-for filename in os.listdir('.'):
-      if filename.endswith('.pdf'):
-        filepath=os.path.join(PATH, filename)
-        files.append(filepath)
+    import os
+    import document_classifier
+    PATH = os.path.abspath(os.path.dirname(__file__))
+    files = []
 
-dict1=document_classifier.analyze(pdfFiles=files)
-print(dict1)
-```
+    for filename in os.listdir('.'):
+        if filename.endswith('.pdf'):
+            filepath=os.path.join(PATH, filename)
+            files.append(filepath)
+
+    dict1=document_classifier.analyze(pdfFiles=files)
+    print(dict1)
 
 Installation
 =====
 This library works on Windows(Python3).You need to install Tesseract-OCR and nltk packages.
 Link to Tesseract(https://github.com/UB-Mannheim/tesseract/wiki)<version 4 preferrably>
 For nltk:
-go to python IDLE:
-```
->>>import nltk
+    go to python IDLE:
+    
+    >>>import nltk
 
->>>nltk.download()
-```
+    >>>nltk.download()
+    
 This will open a new window.
 Download the packages you need.If you are not sure just click on all packages and install
 
 
 Install via pip:
-`pip install git+ssh://git@github.com/SubrataSarkar32/document_classifier.git@master`
+    `pip install git+ssh://git@github.com/SubrataSarkar32/document_classifier.git@master`
 OR
-1.Dowload zip
-2.open cmd in document_classifier directory
-3.type : `python setup.py install` 
+    1.Dowload zip
+    2.open cmd in document_classifier directory
+    3.type : `python setup.py install` 
