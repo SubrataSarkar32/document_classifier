@@ -1,0 +1,9 @@
+README.rst
+setup.py
+document_classifier/__init__.py
+document_classifier/readpdf2.py
+document_classifier.egg-info/PKG-INFO
+document_classifier.egg-info/SOURCES.txt
+document_classifier.egg-info/dependency_links.txt
+document_classifier.egg-info/requires.txt
+document_classifier.egg-info/top_level.txt
