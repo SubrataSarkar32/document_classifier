@@ -1,7 +1,7 @@
 ==============
 document_classifier
 ==============
-document classification using machine learning and OCR
+document classification using machine learning and OCR.Prints the keywords of document
 
 License
 =======
