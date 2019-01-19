@@ -30,7 +30,7 @@ A dictionary is printed
 OR
 
 use this script in your pdf folder:
-.. code-block:: python
+
 ::
 
     import os    
